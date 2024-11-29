@@ -16,10 +16,11 @@ public:
 	AMyBox();
 
 protected:
+	UPROPERTY(Replicated, BlueprintReadWrite)
+	int32 ReplicatedVar = 100;
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 };

@@ -2,25 +2,28 @@
 
 
 #include "MultiplayerCourse/Public/Actors/MyBox.h"
+#include "Net/UnrealNetwork.h"
 
 
 // Sets default values
 AMyBox::AMyBox()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 }
 
 // Called when the game starts or when spawned
 void AMyBox::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	SetReplicates(true);
 }
 
-// Called every frame
-void AMyBox::Tick(float DeltaTime)
+void AMyBox::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
-	Super::Tick(DeltaTime);
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AMyBox, ReplicatedVar)
 }
 
