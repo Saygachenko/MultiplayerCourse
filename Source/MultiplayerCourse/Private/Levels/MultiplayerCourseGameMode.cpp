@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "MultiplayerCourseGameMode.h"
-#include "MultiplayerCourseCharacter.h"
+#include "MultiplayerCourse/Public/Levels/MultiplayerCourseGameMode.h"
 #include "UObject/ConstructorHelpers.h"
 
 AMultiplayerCourseGameMode::AMultiplayerCourseGameMode()
