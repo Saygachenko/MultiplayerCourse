@@ -13,10 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2741580e-5e71-4439-8145-32ee8be07a52" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Course/Actors/BP_Box.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Course/Actors/BP_Box.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/WV/IT45YT4569B1J50JCRNK0Z.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/WV/IT45YT4569B1J50JCRNK0Z.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" afterDir="false" />
     </list>
@@ -35,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Programs/Shared/EpicGames.Horde/Storage/Bundles/BundleCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Core/Private/Misc/CoreGlobals.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Core/Public/CoreGlobals.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/CoreNet.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Engine/Private/GameInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -170,6 +169,7 @@
       <workItem from="1732969605011" duration="1654000" />
       <workItem from="1732972610170" duration="46000" />
       <workItem from="1733061900788" duration="1213000" />
+      <workItem from="1733085208884" duration="2347000" />
     </task>
     <servers />
   </component>

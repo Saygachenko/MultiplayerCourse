@@ -27,4 +27,13 @@ private:
 	
 	UFUNCTION(BlueprintCallable)
 	void OnRep_ReplicatedVar();
+
+	UFUNCTION(BlueprintCallable)
+	void ChangeVariable();
+
+	UFUNCTION(BlueprintCallable)
+	void AuthorityDebugMessage();
+
+	UFUNCTION(BlueprintCallable)
+	void VariableEffect();
 };

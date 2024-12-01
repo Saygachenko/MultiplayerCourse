@@ -2,6 +2,8 @@
 
 
 #include "MultiplayerCourse/Public/Actors/MyBox.h"
+
+#include "Kismet/KismetMathLibrary.h"
 #include "Net/UnrealNetwork.h"
 
 
@@ -29,10 +31,24 @@ void AMyBox::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimePr
 
 void AMyBox::OnRep_ReplicatedVar()
 {
+	AuthorityDebugMessage();
+}
+
+void AMyBox::ChangeVariable()
+{
 	if (HasAuthority())
 	{
-		FVector NewActorLocation = GetActorLocation() + FVector(0.0f, 0.0f, 100.0f);
-		SetActorLocation(NewActorLocation);
+		int32 RandomNum = UKismetMathLibrary::RandomIntegerInRange(0, 100);
+		ReplicatedVar = RandomNum;
+		OnRep_ReplicatedVar();
+	}
+}
+
+void AMyBox::AuthorityDebugMessage()
+{
+	if (HasAuthority())
+	{
+		VariableEffect();
 		
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: OnRep_ReplicatedVar"));
 	}
@@ -41,5 +57,11 @@ void AMyBox::OnRep_ReplicatedVar()
 		const uint32 ClientID = GPlayInEditorID;
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("Client %i: OnRep_ReplicatedVar"), ClientID));
 	}
+}
+
+void AMyBox::VariableEffect()
+{
+	FVector NewActorLocation = GetActorLocation() + FVector(0.0f, 0.0f, 100.0f);
+	SetActorLocation(NewActorLocation);
 }
 
