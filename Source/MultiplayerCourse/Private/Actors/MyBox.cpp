@@ -27,3 +27,19 @@ void AMyBox::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimePr
 	DOREPLIFETIME(AMyBox, ReplicatedVar)
 }
 
+void AMyBox::OnRep_ReplicatedVar()
+{
+	if (HasAuthority())
+	{
+		FVector NewActorLocation = GetActorLocation() + FVector(0.0f, 0.0f, 100.0f);
+		SetActorLocation(NewActorLocation);
+		
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: OnRep_ReplicatedVar"));
+	}
+	else
+	{
+		const uint32 ClientID = GPlayInEditorID;
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("Client %i: OnRep_ReplicatedVar"), ClientID));
+	}
+}
+
