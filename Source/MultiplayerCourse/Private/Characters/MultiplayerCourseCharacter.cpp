@@ -128,3 +128,8 @@ void AMultiplayerCourseCharacter::Look(const FInputActionValue& Value)
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
+
+void AMultiplayerCourseCharacter::ServerRPCFunction_Implementation()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: ServerRPCFunction_Implementation"));
+}

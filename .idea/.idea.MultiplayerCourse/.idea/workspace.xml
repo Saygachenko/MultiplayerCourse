@@ -13,10 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2741580e-5e71-4439-8145-32ee8be07a52" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Course/Actors/BP_Box.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Course/Actors/BP_Box.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,18 @@
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
         <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerCourse.vcxproj" />
       </configuration_1>
+      <configuration_2 setup="1">
+        <option name="CONFIGURATION" value="DebugGame_Editor" />
+        <option name="PLATFORM" value="x64" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerCourse.vcxproj" />
+      </configuration_2>
       <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerCourse.vcxproj" />
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerCourse.vcxproj" />
       <option name="AUTO_SELECT_PRIORITY" value="10010" />
@@ -169,7 +180,7 @@
       <workItem from="1732969605011" duration="1654000" />
       <workItem from="1732972610170" duration="46000" />
       <workItem from="1733061900788" duration="1213000" />
-      <workItem from="1733085208884" duration="2347000" />
+      <workItem from="1733085208884" duration="3722000" />
     </task>
     <servers />
   </component>
@@ -188,6 +199,11 @@
           <url>file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Engine/Private/GameInstance.cpp</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp</url>
+          <line>131</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
