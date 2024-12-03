@@ -64,6 +64,9 @@ protected:
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
+	UFUNCTION(Blueprintcallable)
+	void SpawnMeshActor(UStaticMesh* StaticMesh);
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -78,7 +81,7 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 private:
-	UFUNCTION(Server, Reliable, BlueprintCallable)
-	void ServerRPCFunction();
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable)
+	void ServerRPCFunction(int32 MyArg);
 };
 

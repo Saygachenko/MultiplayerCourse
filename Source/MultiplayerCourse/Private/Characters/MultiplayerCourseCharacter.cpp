@@ -130,10 +130,26 @@ void AMultiplayerCourseCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
-void AMultiplayerCourseCharacter::ServerRPCFunction_Implementation()
+void AMultiplayerCourseCharacter::ServerRPCFunction_Implementation(int32 MyArg)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: ServerRPCFunction_Implementation"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("MyArg: %i"), MyArg));
+	
+	SpawnMeshActor(ActorStaticMesh);
+}
 
+bool AMultiplayerCourseCharacter::ServerRPCFunction_Validate(int32 MyArg)
+{
+	if (MyArg >= 0 && MyArg <= 100)
+	{
+		return true;
+	}
+	
+	return false;
+}
+
+void AMultiplayerCourseCharacter::SpawnMeshActor(UStaticMesh* StaticMesh)
+{
 	AStaticMeshActor* SpawnedActor = GetWorld()->SpawnActor<AStaticMeshActor>(AStaticMeshActor::StaticClass());
 	if (SpawnedActor)
 	{
@@ -153,7 +169,7 @@ void AMultiplayerCourseCharacter::ServerRPCFunction_Implementation()
 			ActorStaticMeshComponent->SetSimulatePhysics(true);
 			if (ActorStaticMesh)
 			{
-				ActorStaticMeshComponent->SetStaticMesh(ActorStaticMesh);	
+				ActorStaticMeshComponent->SetStaticMesh(StaticMesh);	
 			}
 		}
 	}

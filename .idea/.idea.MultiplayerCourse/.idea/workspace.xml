@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2741580e-5e71-4439-8145-32ee8be07a52" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" afterDir="false" />
@@ -183,7 +184,8 @@
       <workItem from="1733085208884" duration="4572000" />
       <workItem from="1733136497197" duration="635000" />
       <workItem from="1733147653971" duration="397000" />
-      <workItem from="1733223911663" duration="2793000" />
+      <workItem from="1733223911663" duration="3020000" />
+      <workItem from="1733250439374" duration="2038000" />
     </task>
     <servers />
   </component>
