@@ -65,3 +65,8 @@ void AMyBox::VariableEffect()
 	SetActorLocation(NewActorLocation);
 }
 
+void AMyBox::NetMulticastRPCFunction_Implementation()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: NetMulticastRPCFunction_Implementation"));
+}
+

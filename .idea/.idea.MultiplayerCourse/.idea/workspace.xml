@@ -13,10 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2741580e-5e71-4439-8145-32ee8be07a52" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerCourse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Characters/MultiplayerCourseCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Maps/ThirdPersonMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Private/Actors/MyBox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerCourse/Public/Actors/MyBox.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +185,7 @@
       <workItem from="1733147653971" duration="397000" />
       <workItem from="1733223911663" duration="3020000" />
       <workItem from="1733250439374" duration="2038000" />
+      <workItem from="1733256733512" duration="1715000" />
     </task>
     <servers />
   </component>

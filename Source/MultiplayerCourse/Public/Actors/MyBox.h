@@ -36,4 +36,7 @@ private:
 
 	UFUNCTION(BlueprintCallable)
 	void VariableEffect();
+
+	UFUNCTION(NetMulticast, Reliable, BlueprintCallable)
+	void NetMulticastRPCFunction();
 };
