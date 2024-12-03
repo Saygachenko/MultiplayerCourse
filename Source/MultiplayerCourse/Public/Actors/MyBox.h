@@ -18,11 +18,17 @@ public:
 protected:
 	UPROPERTY(ReplicatedUsing = OnRep_ReplicatedVar, BlueprintReadWrite)
 	int32 ReplicatedVar = 100;
+
+	UPROPERTY(EditDefaultsOnly)
+	UParticleSystem* ParticleEffect;
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 private:
+	UPROPERTY()
+	UParticleSystemComponent* SpawnedEmitter = nullptr;
+	
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	
 	UFUNCTION(BlueprintCallable)

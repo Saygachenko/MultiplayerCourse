@@ -3,8 +3,10 @@
 
 #include "MultiplayerCourse/Public/Actors/MyBox.h"
 
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Net/UnrealNetwork.h"
+#include "Particles/ParticleSystemComponent.h"
 
 
 // Sets default values
@@ -68,5 +70,17 @@ void AMyBox::VariableEffect()
 void AMyBox::NetMulticastRPCFunction_Implementation()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: NetMulticastRPCFunction_Implementation"));
+	
+	if (!SpawnedEmitter)
+	{
+		SpawnedEmitter = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleEffect, GetActorLocation(), GetActorRotation(), FVector(2), true, EPSCPoolMethod::AutoRelease);
+	}
+	else
+	{
+		SpawnedEmitter->DestroyComponent();
+		SpawnedEmitter = nullptr;
+
+		SpawnedEmitter = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleEffect, GetActorLocation(), GetActorRotation(), FVector(2), true, EPSCPoolMethod::AutoRelease);
+	}
 }
 
