@@ -49,13 +49,20 @@ public:
 	
 
 protected:
+	UPROPERTY(EditDefaultsOnly)
+	UStaticMesh* ActorStaticMesh;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float SpawnedActorDistance = 100.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float SpawnedActorDistanceUp = 50.0f;
+	
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
 
 protected:
 	// APawn interface

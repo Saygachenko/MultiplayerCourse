@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "Engine/StaticMeshActor.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -132,4 +133,28 @@ void AMultiplayerCourseCharacter::Look(const FInputActionValue& Value)
 void AMultiplayerCourseCharacter::ServerRPCFunction_Implementation()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Server: ServerRPCFunction_Implementation"));
+
+	AStaticMeshActor* SpawnedActor = GetWorld()->SpawnActor<AStaticMeshActor>(AStaticMeshActor::StaticClass());
+	if (SpawnedActor)
+	{
+		SpawnedActor->SetReplicates(true);
+		SpawnedActor->SetReplicateMovement(true);
+		SpawnedActor->SetMobility(EComponentMobility::Movable);
+
+		FVector StartLocation = GetActorLocation();
+		FVector DirectionActor = StartLocation + GetActorRotation().Vector() * SpawnedActorDistance;
+		FVector SpawnedLocation = DirectionActor + GetActorUpVector() *	SpawnedActorDistanceUp;
+		
+		SpawnedActor->SetActorLocation(SpawnedLocation);
+		UStaticMeshComponent* ActorStaticMeshComponent = SpawnedActor->GetStaticMeshComponent();
+		if (ActorStaticMeshComponent)
+		{
+			ActorStaticMeshComponent->SetIsReplicated(true);
+			ActorStaticMeshComponent->SetSimulatePhysics(true);
+			if (ActorStaticMesh)
+			{
+				ActorStaticMeshComponent->SetStaticMesh(ActorStaticMesh);	
+			}
+		}
+	}
 }

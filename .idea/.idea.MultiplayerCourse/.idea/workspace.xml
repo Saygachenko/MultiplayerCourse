@@ -180,7 +180,10 @@
       <workItem from="1732969605011" duration="1654000" />
       <workItem from="1732972610170" duration="46000" />
       <workItem from="1733061900788" duration="1213000" />
-      <workItem from="1733085208884" duration="3722000" />
+      <workItem from="1733085208884" duration="4572000" />
+      <workItem from="1733136497197" duration="635000" />
+      <workItem from="1733147653971" duration="397000" />
+      <workItem from="1733223911663" duration="2793000" />
     </task>
     <servers />
   </component>
@@ -199,11 +202,6 @@
           <url>file://$PROJECT_DIR$/../../Unreal Engine/UE_5.4/Engine/Source/Runtime/Engine/Private/GameInstance.cpp</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MultiplayerCourse/Private/Characters/MultiplayerCourseCharacter.cpp</url>
-          <line>131</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
